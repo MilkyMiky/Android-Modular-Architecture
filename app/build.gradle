@@ -22,6 +22,9 @@ android {
         sourceCompatibility Versions.sourceCompatibility
         targetCompatibility Versions.targetCompatibility
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
