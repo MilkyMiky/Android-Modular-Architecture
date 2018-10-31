@@ -27,6 +27,8 @@ dependencies {
 
     api project(':core')
     implementation Deps.kotlinStdlib
+    implementation Deps.rxKotlin
+    implementation Deps.rxAndroid
 }
 repositories {
     mavenCentral()
