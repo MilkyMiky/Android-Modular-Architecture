@@ -23,12 +23,14 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':core')
+    implementation project(':network')
 
-    api project(':core')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation Deps.kotlinStdlib
     implementation Deps.rxKotlin
     implementation Deps.rxAndroid
+
 }
 repositories {
     mavenCentral()

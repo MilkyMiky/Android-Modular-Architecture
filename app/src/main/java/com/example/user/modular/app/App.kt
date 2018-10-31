@@ -2,6 +2,8 @@ package com.example.user.modular.app
 
 import android.app.Application
 import com.example.user.modular.di.appModule
+import com.example.user.modular.di.coreModule
+import com.example.user.modular.di.networkModule
 import com.example.user.modular.di.repositoryModule
 import org.koin.android.ext.android.startKoin
 
@@ -16,7 +18,9 @@ class App : Application() {
     startKoin(
       this, listOf(
         appModule,
-        repositoryModule
+        repositoryModule,
+        coreModule,
+        networkModule
       )
     )
   }

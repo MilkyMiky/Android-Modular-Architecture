@@ -28,9 +28,10 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':repository')
+    implementation project(':core')
 
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation Deps.appCompat
     implementation Deps.constraintLayout
 

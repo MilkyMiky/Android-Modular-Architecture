@@ -25,6 +25,12 @@ object Versions {
     const val rxKotlinVersion = "2.3.0"
     const val rxAndroidVersion = "2.1.0"
 
+    //Network
+    const val okHttp = "3.11.0"
+    const val retrofit = "2.4.0"
+    const val retrofitConverterGson = "2.4.0"
+    const val retrofitConverterLoganSquare = "1.4.1"
+
     //Mosby
     const val mosbyVersion = "3.1.0"
 
@@ -43,7 +49,8 @@ object Deps {
 
     //Android
     const val appCompat = "com.android.support:appcompat-v7:${Versions.appCompat}"
-    const val constraintLayout = "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
+    const val constraintLayout =
+        "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
 
     //Kotlin
@@ -56,11 +63,22 @@ object Deps {
     const val rxKotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlinVersion}"
     const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroidVersion}"
 
+    // Network
+    const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
+    const val okHttpInteceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val retrofitRxJavaAdapter = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
+    const val retrofitConverterGson =
+        "com.squareup.retrofit2:converter-gson:${Versions.retrofitConverterGson}"
+    const val retrofitConverterLoganSquare =
+        "com.github.aurae.retrofit2:converter-logansquare:${Versions.retrofitConverterLoganSquare}"
+
     //Mosby
     const val mosby = "com.hannesdorfmann.mosby3:mvi:${Versions.mosbyVersion}"
 
     // Gradle
-    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlinVersion}"
+    const val kotlinGradlePlugin =
+        "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlinVersion}"
     const val buildGradle = "com.android.tools.build:gradle:${Versions.buildGradleVersion}"
 
     //Test
